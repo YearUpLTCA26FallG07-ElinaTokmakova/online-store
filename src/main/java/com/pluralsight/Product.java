@@ -46,11 +46,7 @@ public class Product {
     }
 
     public String toString() {
-        return "Product{" +
-                "sku=" + sku +
-                ", name='" + name +
-                ", price=" + price +
-                ", department=" + department +
-                '}';
+        return String.format("\uD83D\uDD11 %-9s | \uD83C\uDFF7\uFE0F %49s | \uD83D\uDCC2 %s%n | \uD83D\uDCB0 %10.2f",
+                sku, name, department, price);
     }
 }
